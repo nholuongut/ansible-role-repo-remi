@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+
+  roles:
+    - role: nholuong.repo-epel
+    - role: nholuong.repo-remi
